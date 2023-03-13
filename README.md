@@ -4,3 +4,5 @@
 ## Более подробная информация и алгоритм кодирования: https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D0%A5%D1%8D%D0%BC%D0%BC%D0%B8%D0%BD%D0%B3%D0%B0
 
 # Пример работы программы:
+
+![image](https://user-images.githubusercontent.com/55853125/224674591-35029bd0-a5c3-4893-acb3-b05651ed99b7.png)
