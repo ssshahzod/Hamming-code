@@ -91,24 +91,18 @@ fn decode(length_of_word: u32, num_of_bits: u32, msg: Vec<u32>) -> Vec<u32> {
 			letter_matrix[0][error as usize] = 
 						if letter_matrix[0][error as usize] == 0 {1} else {0};
 		}
+		else {
+			println!("No errors detected.");
+		}
 		let mut tmp = 0;
 		for i in 0..length_of_word + num_of_bits{ //translate binary into decimal
 			let pos: u32 = 2;
 			if contr_bits.contains(&(i + 1)){
 				continue;
 			}
-			println!("TMP: {}, i: {}, letter: {}", tmp, i,
-										letter_matrix[0][i as usize]);
 			res[index] += pos.pow(tmp) * letter_matrix[0][i as usize];
 			tmp += 1;
 		}
-	}
-	for(i, row) in letter_matrix.iter().enumerate(){
-		for(j, col) in row.iter().enumerate(){
-			print!("{} ", col);
-		
-		}
-		print!("\n");
 	}
 	res
 }
